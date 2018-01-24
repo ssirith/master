@@ -5,8 +5,11 @@ package warmup02;
 class Student {
     private long id;
     private String name;
+    private static int amountstd;
 
     public Student(String name) {
+        amountstd++;
+        this.id = 60130500000l+amountstd;
         this.name = name;
     }
 
